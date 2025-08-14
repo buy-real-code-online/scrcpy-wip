@@ -157,7 +157,7 @@ sc_recorder_open_output_file(struct sc_recorder *recorder) {
     AVDictionary *options = NULL;
     av_dict_set(&options, "listen", "1", 0); //Enable RTMP listen mode
 
-    int ret = avio_open2(&recorder->ctx->pb, RTMP_URL, AVIO_FLAG_WRITE, NULL, &options);
+    int ret = avio_open2(&recorder->ctx->pb, RTMP_URL, AVIO_FLAG_WRITE, NULL, NULL);
 
     free(file_url);
     if (ret < 0) {
