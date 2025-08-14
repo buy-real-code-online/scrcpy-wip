@@ -12,7 +12,7 @@
 #include "util/log.h"
 #include "util/str.h"
 
-#define RTMP_URL "rtmp://localhost:2000/live/stream"
+#define RTMP_URL "rtmp://mediamtx:1935/live/stream"
 
 /** Downcast packet sinks to recorder */
 #define DOWNCAST_VIDEO(SINK) \
